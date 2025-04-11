@@ -24,6 +24,8 @@ export default function Dashboard() {
         console.log("Public Address:", pub_address);
         const authHash = await computeAuthHash(password, pub_address);
         console.log("Auth hash:", authHash);
+        if (!authHash) return;
+        navigate(`/vault`);
 
     };
 

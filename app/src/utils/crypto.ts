@@ -15,3 +15,4 @@ export async function computeAuthHash(password: string, pubAddress: string): Pro
     const authHash = await hashSHA256(combined);
     return authHash;
 }
+
